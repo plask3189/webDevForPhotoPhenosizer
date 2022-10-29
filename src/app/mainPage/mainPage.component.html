@@ -1,0 +1,33 @@
+<h2>
+  This tool is a rapid machine learning-based method to measure cell dimensions
+  in Schizosaccharomyces pombe (fission yeast).
+</h2>
+<!––--------------- Input values -------------->
+<div>
+  <label for="thresholdInput">Threshold: </label>
+  <input type="text" id="thresholdInput" name="thresholdInput" /><br /><br />
+  <label for="areaCutoffInput">Area cutoff: </label>
+  <input type="text" id="areaCutoffInput" name="areaCutoffInput" /><br /><br />
+</div>
+<!––--------------- Choose folder w/ images  -------------->
+<p>Choose the folder with your images.</p>
+<div class="submission_attachment" style="margin-bottom: 1em; display: block;">
+  <input
+    type="file"
+    webkitdirectory
+    directory
+    multiple
+    name="attachments[-1][uploaded_data]"
+    class="input-file"
+  />
+  <a href="#" class="remove_attachment_link no-hover" style="display: none;"
+    ><i class="icon-end" aria-hidden="true"></i
+    ><span class="screenreader-only">remove empty attachment</span></a
+  >
+  <div class="bad_ext_msg error_message" style="display: none">
+    This file type is not allowed. Accepted file types are: folders
+  </div>
+</div>
+
+<p>Click on the submit button for processing to begin.</p>
+<input type="submit" value="Submit" />
